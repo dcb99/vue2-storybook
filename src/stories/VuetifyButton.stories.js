@@ -1,20 +1,18 @@
+
 import VuetifyButton from "./VuetifyButton.vue";
 
-export default {
-  title: "Vuetify Button",
+export default ({
+  title: 'Vuetify Button',
   component: VuetifyButton,
-};
+})
 
 const Template = (args, { argTypes }) => ({
-  components: { VuetifyButton },
-  args: {
-    label: 'Default'
-  },
-  template: `<VuetifyButton :label="label" />`,
+  components: { VuetifyButton},
+  props: Object.keys(argTypes),
+  template: '<VuetifyButton :label="label" />'
 });
 
-export const Primary = Template.bind({});
-export const PrimaryHello = Template.bind({});
-PrimaryHello.args = {
-  label: 'HELLO!'
+export const Default = Template.bind({});
+Default.args = {
+  label: 'HELLO'
 }

@@ -1,5 +1,5 @@
 <template>
-  <v-btn :label="label"></v-btn>
+  <v-btn>{{ label }}</v-btn>
 </template>
 
 <script>

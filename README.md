@@ -1,6 +1,6 @@
 # vue2-storybook
 
-Simple boilerplat app demonstrating how to set up (storybook)[https://storybook.js.org/] with Vue 2 & Vuetify 2.
+Simple boilerplate app demonstrating how to set up <a href='https://storybook.js.org'>Storybook</a> with Vue 2 & Vuetify 2.Special thanks to Morgan Benton's <a href='https://morphatic.com/2020/09/30/configuring-storybook-6-for-vue-2-vuetify-2-3/'>immeasurably helpful post</a> for pointing me in the right direction in getting this up and running. 
 
 ## Project setup
 

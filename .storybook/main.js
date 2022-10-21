@@ -1,5 +1,6 @@
 const path = require('path');
 const { config } = require('process');
+const loader = require('sass-loader');
 
 module.exports = {
   "stories": [
@@ -18,6 +19,18 @@ module.exports = {
   webpackFinal: async (config, { configType }) => {
     config.resolve.alias['@'] = path.resolve(__dirname, '..', 'src');
     config.resolve.alias['~storybook'] = path.resolve(__dirname);
+
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ['style-loader', 'css-loader', {
+        loader: 'sass-loader',
+        options: {
+          additionalData: '@import "@/scss/main.scss;"'
+        }
+        
+      }],
+      include: path.resolve(__dirname, '../')
+    })
     return config;
   }
 }

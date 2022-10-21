@@ -1,5 +1,7 @@
 # vue2-storybook
 
+Simple boilerplat app demonstrating how to set up (storybook)[https://storybook.js.org/] with Vue 2 & Vuetify 2.
+
 ## Project setup
 
 ```

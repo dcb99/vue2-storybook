@@ -1,3 +1,6 @@
+const path = require('path');
+const { config } = require('process');
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -11,5 +14,5 @@ module.exports = {
   "framework": "@storybook/vue",
   "core": {
     "builder": "@storybook/builder-webpack5"
-  }
+  },
 }

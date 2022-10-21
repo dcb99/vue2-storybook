@@ -15,4 +15,9 @@ module.exports = {
   "core": {
     "builder": "@storybook/builder-webpack5"
   },
+  webpackFinal: async (config, { configType }) => {
+    config.resolve.alias['@'] = path.resolve(__dirname, '..', 'src');
+    config.resolve.alias['~storybook'] = path.resolve(__dirname);
+    return config;
+  }
 }

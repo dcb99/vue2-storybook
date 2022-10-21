@@ -1,14 +1,14 @@
 <template>
-    <v-btn>Hello!</v-btn>
+  <v-btn :label="label"></v-btn>
 </template>
 
 <script>
 export default {
-    props: {
-        label: {
-            type: String,
-            required: true,
-        },
+  props: {
+    label: {
+      type: String,
+      required: true,
     },
+  },
 };
 </script>

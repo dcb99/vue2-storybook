@@ -1,4 +1,12 @@
 const { defineConfig } = require("@vue/cli-service");
+const path = require("path");
 module.exports = defineConfig({
   transpileDependencies: ["vuetify"],
+
+  pluginOptions: {
+    "style-resources-loader": {
+      preProcessor: "scss",
+      patterns: [path.resolve(__dirname, "./src/scss/main.scss")],
+    },
+  },
 });

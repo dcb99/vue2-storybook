@@ -34,19 +34,19 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <VuetifyButton label="Submit" />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import VuetifyButton from '@/stories/VuetifyButton.vue';
 
 export default {
-  name: "App",
+  name: 'App',
 
   components: {
-    HelloWorld,
+    VuetifyButton,
   },
 
   data: () => ({

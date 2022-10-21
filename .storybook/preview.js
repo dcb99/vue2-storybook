@@ -1,12 +1,12 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css';
+import Vue from "vue";
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
 
 Vue.use(Vuetify);
 const vuetify = new Vuetify({
   theme: {
-    light: true
-  }
+    light: true,
+  },
 });
 
 export const parameters = {
@@ -17,7 +17,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
 
 export const decorators = [
   (story, context) => {
@@ -27,7 +27,7 @@ export const decorators = [
       components: { wrapped },
       template: `
         <v-app><v-container fluid><wrapped /></v-container></v-app>
-      `
-    })
-  }
-]
+      `,
+    });
+  },
+];

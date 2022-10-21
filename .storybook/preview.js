@@ -4,11 +4,7 @@ import "vuetify/dist/vuetify.min.css";
 import "./../src/scss/main.scss";
 
 Vue.use(Vuetify);
-const vuetify = new Vuetify({
-  theme: {
-    light: true,
-  },
-});
+const vuetify = new Vuetify();
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

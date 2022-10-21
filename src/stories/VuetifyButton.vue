@@ -1,5 +1,5 @@
 <template>
-  <v-btn :dark="isDark" class="btn-primary">{{ label }}</v-btn>
+  <v-btn class="btn-primary">{{ label }}</v-btn>
 </template>
 
 <script>
@@ -9,7 +9,6 @@ export default {
       type: String,
       required: true,
     },
-    isDark: Boolean,
   },
 };
 </script>

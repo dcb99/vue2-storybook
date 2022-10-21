@@ -34,7 +34,9 @@
     </v-app-bar>
 
     <v-main>
-      <VuetifyButton label="Submit" />
+      <v-container fluid>
+        <VuetifyButton label="Submit" />
+      </v-container>
     </v-main>
   </v-app>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <v-btn class="btn-primary">{{ label }}</v-btn>
+  <v-btn :dark="isDark" class="btn-primary">{{ label }}</v-btn>
 </template>
 
 <script>
@@ -9,14 +9,7 @@ export default {
       type: String,
       required: true,
     },
+    isDark: Boolean,
   },
 };
 </script>
-
-<style lang="scss">
-@import '@/scss/main.scss';
-
-.v-btn {
-  background: $background-primary !important;
-}
-</style>

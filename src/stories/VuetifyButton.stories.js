@@ -8,10 +8,11 @@ export default {
 const Template = (args, { argTypes }) => ({
   components: { VuetifyButton },
   props: Object.keys(argTypes),
-  template: '<VuetifyButton :label="label" />',
+  template: '<VuetifyButton :label="label" :isDark="false" />',
 });
 
 export const Default = Template.bind({});
 Default.args = {
   label: 'HELLO',
+  isDark: false,
 };

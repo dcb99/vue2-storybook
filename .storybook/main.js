@@ -1,6 +1,4 @@
 const path = require('path');
-const { config } = require('process');
-const loader = require('sass-loader');
 
 module.exports = {
     stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
